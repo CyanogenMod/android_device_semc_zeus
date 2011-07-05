@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/ueventd.zeus.rc:root/ueventd.zeus.rc \
     device/semc/zeus/recovery.fstab:root/etcrec/recovery.fstab \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
+    device/semc/zeus/prebuilt/logo.rle:root/logo.rle \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec 
 
 
