@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
     librs_jni \
     gralloc.msm7x30 \
     overlay.default \
-    liboverlay \
+    screencap \
     gps.semc \
     lights.semc \
     libOmxCore \
@@ -49,17 +49,32 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/zeus/init.semc.rc:root/init.semc.rc \
-    device/semc/zeus/ueventd.zeus.rc:root/ueventd.zeus.rc \
+    device/semc/zeus/prebuilt/init.semc.rc:root/init.semc.rc \
+    device/semc/zeus/prebuilt/ueventd.zeus.rc:root/ueventd.zeus.rc \
     device/semc/zeus/recovery.fstab:root/etcrec/recovery.fstab \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/zeus/prebuilt/logo.rle:root/logo.rle \
-    device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec 
+    device/semc/anzu/prebuilt/logo.rle:root/logo.rle \
+    device/semc/anzu/prebuilt/bootrec:root/sbin/bootrec \
+    device/semc/anzu/recovery.fstab:root/etcrec/recovery.fstab
 
+
+#recovery resources
+PRODUCT_COPY_FILES += \
+    bootable/recovery/res/images/icon_clockwork.png:root/res/images/icon_clockwork.png \
+    bootable/recovery/res/images/icon_error.png:root/res/images/icon_error.png \
+    bootable/recovery/res/images/icon_installing.png:root/res/images/icon_installing.png \
+    bootable/recovery/res/images/indeterminate1.png:root/res/images/indeterminate1.png \
+    bootable/recovery/res/images/indeterminate2.png:root/res/images/indeterminate2.png \
+    bootable/recovery/res/images/indeterminate3.png:root/res/images/indeterminate3.png \
+    bootable/recovery/res/images/indeterminate4.png:root/res/images/indeterminate4.png \
+    bootable/recovery/res/images/indeterminate5.png:root/res/images/indeterminate5.png \
+    bootable/recovery/res/images/indeterminate6.png:root/res/images/indeterminate6.png \
+    bootable/recovery/res/images/progress_empty.png:root/res/images/progress_empty.png \
+    bootable/recovery/res/images/progress_fill.png:root/res/images/progress_fill.png
 
 #WIFI modules and configs
 PRODUCT_COPY_FILES += \
-    device/semc/zeus/modules/bcm4329.ko:system/lib/modules/bcm4329.ko 
+    device/semc/zeus/modules/bcm4329.ko:system/lib/modules/bcm4329.ko
 
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
