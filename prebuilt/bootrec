@@ -1,7 +1,7 @@
 #!/sbin/sh
 
 
-cat /dev/input/event1 > /dev/keycheck&
+cat /dev/input/event2 > /dev/keycheck&
 sleep 3
 kill -9 $!
 if [ -s /dev/keycheck ]
@@ -9,6 +9,13 @@ then
 mount -o remount,rw rootfs /
 umount -l /system
 umount -l /data
+umount -l /cache
+umount -l /mnt/sdcard
+rm -r /sdcard
+rm -r /not/sdcard
+mkdir /sdcard
+mkdir /tmp
+mount /dev/block/mmcblk0p1 /sdcard
 /sbin/recovery &
 /sbin/adbd recovery 
 fi
@@ -19,6 +26,13 @@ rm /cache/recovery/boot
 mount -o remount,rw rootfs /
 umount -l /system
 umount -l /data
+umount -l /cache
+umount -l /mnt/sdcard
+rm -r /sdcard
+rm -r /not/sdcard
+mkdir /sdcard
+mkdir /tmp
+mount /dev/block/mmcblk0p1 /sdcard
 /sbin/recovery &
 /sbin/adbd recovery 
 fi
