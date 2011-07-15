@@ -66,6 +66,8 @@ adb pull /system/lib/libmmjpeg.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$VENDOR/$DEVICE/proprietary 
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libopencore_common.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/drmserver ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/drmioserver ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## FIRMWARE
 adb pull /system/etc/firmware/bcm4329.hcd ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -106,6 +108,18 @@ adb pull /system/lib/libmiscta.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 #Temporary GPS Fix untill we have 50001 gps
 adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+#permissions
+adb pull /system/etc/permissions/android.hardware.camera.front.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/permissions/com.sonyericsson.android.xperiaplaycertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/permissions/com.sony.android.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+
+#libs
+adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+
 
 
 ./setup-makefiles.sh
