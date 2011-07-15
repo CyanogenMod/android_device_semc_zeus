@@ -32,6 +32,8 @@ adb pull /system/usr/keylayout/simple_remote.kl ../../../vendor/$VENDOR/$DEVICE/
 adb pull /system/usr/keychars/qwerty.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keychars/qwerty2.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keychars/zeus-keypad.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keychars/zeus-keypad.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/lidswitchd ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
 ## RIL related stuff 

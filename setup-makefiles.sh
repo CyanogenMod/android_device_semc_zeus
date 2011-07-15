@@ -49,7 +49,9 @@ vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kl:system/usr/keylayout/qwerty.k
 vendor/__VENDOR__/__DEVICE__/proprietary/simple_remote.kl:system/usr/keylayout/simple_remote.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \\
-vendor/__VENDOR__/__DEVICE__/proprietary/zeus-keypad.kcm.bin:system/usr/keychars/zeus-keypad.kcm.bin 
+vendor/__VENDOR__/__DEVICE__/proprietary/zeus-keypad.kcm.bin:system/usr/keychars/zeus-keypad.kcm.bin \\
+vendor/__VENDOR__/__DEVICE__/proprietary/lidswitchd:system/bin/lidswitchd
+
 
 ## RIL related stuff 
 PRODUCT_COPY_FILES += \\
