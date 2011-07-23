@@ -145,14 +145,8 @@ vendor/__VENDOR__/__DEVICE__/proprietary/com.sony.android.playstationcertified.x
 
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framework/xperiaplaycertified.jar \\
-vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar
-
-
-
-
-
-
-
+vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
+vendor/__VENDOR__/__DEVICE__/proprietary/getgames.apk:system/app/getgames.apk
 
 
 EOF

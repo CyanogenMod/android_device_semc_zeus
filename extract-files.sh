@@ -115,9 +115,10 @@ adb pull /system/etc/permissions/com.sonyericsson.android.xperiaplaycertified.xm
 adb pull /system/etc/permissions/com.sony.android.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
-#libs
+#libs & Apps
 adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/app/getgames.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
 
