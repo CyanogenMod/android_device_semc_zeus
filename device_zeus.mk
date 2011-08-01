@@ -38,11 +38,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/init.semc.rc:root/init.semc.rc \
     device/semc/zeus/prebuilt/ueventd.zeus.rc:root/ueventd.zeus.rc \
-    device/semc/zeus/recovery.fstab:root/etcrec/recovery.fstab \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/zeus/prebuilt/logo.rle:root/logo.rle \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec \
-    device/semc/zeus/recovery.fstab:root/etcrec/recovery.fstab
+    device/semc/zeus/recovery.fstab:root/recovery.fstab
 
 
 #recovery resources
