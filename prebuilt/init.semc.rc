@@ -96,9 +96,6 @@ on boot
     chown drm drm /data/drm
     chmod 0774 /data/drm
 
-#copy wifi modules from kernel to system
-    cp /modules/bcm4329.ko /system/lib/modules/bcm4329.ko
-
 service drm /system/bin/drmserver
     user drm
     group system root inet
