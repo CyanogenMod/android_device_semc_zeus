@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 
 #WIFI modules and configs
 PRODUCT_COPY_FILES += \
-    device/semc/zeus/modules/bcm4329.ko:system/lib/modules/bcm4329.ko
+    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \

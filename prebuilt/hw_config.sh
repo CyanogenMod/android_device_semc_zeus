@@ -9,3 +9,7 @@ echo 16  > $dev/btn_trig_period_time  # Button Period Time(cycle) default = 16
 echo 512   > $dev/btn_trig_hyst_freq    # Button Hysteresis Freq(Hz) default = 512
 echo 1  > $dev/btn_trig_hyst_time   # Button Hysteresis Time(Cycle) default = 16
 echo 480 > $dev/btn_trig_level  # default = 500
+
+#copy wifi modules from kernel to system
+cp /modules/bcm4329.ko /system/lib/modules/bcm4329.ko
+
