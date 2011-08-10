@@ -11,5 +11,6 @@ echo 1  > $dev/btn_trig_hyst_time   # Button Hysteresis Time(Cycle) default = 16
 echo 480 > $dev/btn_trig_level  # default = 500
 
 #copy wifi modules from kernel to system
+mount -o rw,remount -t yaffs2 /dev/block/mtdblock0 /system
 cp /modules/bcm4329.ko /system/lib/modules/bcm4329.ko
-
+mount -o ro,remount -t yaffs2 /dev/block/mtdblock0 /system
