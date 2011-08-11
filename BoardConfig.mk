@@ -15,4 +15,6 @@ WIFI_DRIVER_MODULE_NAME     := "bcm4329"
 
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+TARGET_OTA_ASSERT_DEVICE := R800i,R800a,zeus
+
 -include device/semc/msm7x30-common/Android.mk
