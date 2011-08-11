@@ -62,6 +62,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
 
+# semc msm7x30 uses high-density artwork where available
+PRODUCT_LOCALES += hdpi
+
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \
     rild.libargs=-d/dev/smd0 \
