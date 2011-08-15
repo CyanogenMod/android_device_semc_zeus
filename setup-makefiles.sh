@@ -148,6 +148,8 @@ vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framewor
 vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
 vendor/__VENDOR__/__DEVICE__/proprietary/getgames.apk:system/app/getgames.apk
 
+PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk
 
 EOF
 

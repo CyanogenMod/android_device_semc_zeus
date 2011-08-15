@@ -120,7 +120,8 @@ adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEV
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/app/getgames.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
-
+#ps dependencies
+adb pull /system/app/preinstalledservice.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
 ./setup-makefiles.sh
