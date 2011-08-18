@@ -17,4 +17,6 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 TARGET_OTA_ASSERT_DEVICE := R800i,R800a,zeus
 
+BOARD_CAMERA_USE_GETBUFFERINFO := true
+
 -include device/semc/msm7x30-common/Android.mk
