@@ -1,8 +1,6 @@
 on early-boot
-    # Start the offline charging (This blocks booting further in some cases)
     exec /sbin/bootrec
 
-    # Make sure the crashdump level file is writable by Debug Menu > Crash Level
 
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
@@ -135,3 +133,19 @@ service hw_config /system/bin/sh /system/etc/hw_config.sh
 	oneshot
 
 service lidswitchd /system/bin/lidswitchd
+
+# Net mgr
+service netmgrd /system/bin/netmgrd -E
+
+on property:ro.use_data_netmgrd=false
+    # netmgr not supported on specific target
+    stop netmgrd
+
+service nvcustomizer /system/bin/nvcustomizer
+    user root
+    oneshot
+
+# Copy calibration data from NV to kernel drivers
+service nvimport /system/bin/nvimport
+    user root
+    oneshot

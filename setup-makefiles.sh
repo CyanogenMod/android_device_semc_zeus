@@ -76,7 +76,14 @@ vendor/__VENDOR__/__DEVICE__/proprietary/libqueue.so:system/lib/libqueue.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libuim.so:system/lib/libuim.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libril-qc-1.so:system/lib/libril-qc-1.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libwms.so:system/lib/libwms.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libwmsts.so:system/lib/libwmsts.so
+vendor/__VENDOR__/__DEVICE__/proprietary/libwmsts.so:system/lib/libwmsts.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libdsutils.so:system/lib/libdsutils.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libidl.so:system/lib/libidl.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libnetmgr.so:system/lib/libnetmgr.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/libqdp.so:system/lib/libqdp.so \\
+vendor/__VENDOR__/__DEVICE__/proprietary/netmgrd:system/bin/netmgrd
+
 
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \\
@@ -145,8 +152,8 @@ vendor/__VENDOR__/__DEVICE__/proprietary/com.sony.android.playstationcertified.x
 
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framework/xperiaplaycertified.jar \\
-vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
-vendor/__VENDOR__/__DEVICE__/proprietary/getgames.apk:system/app/getgames.apk
+vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar
+//vendor/__VENDOR__/__DEVICE__/proprietary/getgames.apk:system/app/getgames.apk
 
 PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk

@@ -59,6 +59,12 @@ adb pull /system/lib/libuim.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libril-qc-1.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwms.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwmsts.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libdsi_netctrl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libdsutils.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libidl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnetmgr.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libqdp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/netmgrd ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## Camera proprietaries
 adb pull /system/lib/liboemcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
