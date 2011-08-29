@@ -56,6 +56,7 @@ adb pull /system/lib/libpbmlib.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libqmi.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libqueue.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libuim.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libreference-ril.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libril-qc-1.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwms.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libwmsts.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -90,17 +91,10 @@ adb pull /system/etc/firmware/yamato_pfp.fw ../../../vendor/$VENDOR/$DEVICE/prop
 adb pull /system/etc/firmware/yamato_pm4.fw ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
-## WIFI & BT TI1271
+## WIFI & BT BCM
 adb pull /system/etc/wifi/calibration ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/wifi/wpa_supplicant.conf ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/brcm_patchram_plus ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-## Adreno 200 files
-adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
-adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## Other libraries and proprietary binaries
 adb pull /system/lib/libaudioalsa.so ../../../vendor/$VENDOR/$DEVICE/proprietary

@@ -36,13 +36,11 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/zeus/prebuilt/init.semc.rc:root/init.semc.rc \
-    device/semc/zeus/prebuilt/ueventd.zeus.rc:root/ueventd.zeus.rc \
+    device/semc/msm7x30-common/prebuilt/uevent.zeus.rc:root/uevent.zeus.rc \
+    device/semc/msm7x30-common/prebuilt/init.zeus.rc:root/init.semc.rc \
+    device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/zeus/prebuilt/logo.rle:root/logo.rle \
-    device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec \
-    device/semc/zeus/recovery.fstab:root/recovery.fstab
-
+    device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
 
 #recovery resources
 PRODUCT_COPY_FILES += \
@@ -60,7 +58,7 @@ PRODUCT_COPY_FILES += \
 
 #WIFI modules and configs
 PRODUCT_COPY_FILES += \
-    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
+    device/semc/msm7x30-common/modules/bcm4329.ko:root/modules/bcm4329.ko
 
 # semc msm7x30 uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
@@ -86,7 +84,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15 \
     ro.sf.lcd_density=240 \
-    ro.sf.hwrotation=180 \
     keyguard.no_require_sim=true \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y \
