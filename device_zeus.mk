@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/msm7x30-common/prebuilt/uevent.zeus.rc:root/uevent.zeus.rc \
+    device/semc/msm7x30-common/prebuilt/ueventd.zeus.rc:root/ueventd.zeus.rc \
     device/semc/msm7x30-common/prebuilt/init.zeus.rc:root/init.semc.rc \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
