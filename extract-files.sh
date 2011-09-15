@@ -118,7 +118,7 @@ adb pull /system/etc/permissions/com.sony.android.playstationcertified.xml ../..
 #libs & Apps
 adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/app/getgames.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/app/com.sonyericsson.androidapp.storefront.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 #ps dependencies
 adb pull /system/app/preinstalledservice.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
