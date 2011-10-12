@@ -18,7 +18,7 @@ else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
--include device/semc/msm7x30-common/msm7x30.mk
+-include device/semc/zeus-common/zeus.mk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
@@ -36,15 +36,9 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/msm7x30-common/prebuilt/ueventd.zeus.rc:root/ueventd.zeus.rc \
-    device/semc/msm7x30-common/prebuilt/init.zeus.rc:root/init.semc.rc \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
-
-#WIFI modules and configs
-PRODUCT_COPY_FILES += \
-    device/semc/msm7x30-common/modules/bcm4329.ko:root/modules/bcm4329.ko
 
 # semc msm7x30 uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
