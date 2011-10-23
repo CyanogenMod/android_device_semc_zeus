@@ -1,6 +1,6 @@
 #!/sbin/sh
 
-cat /dev/input/event2 > /dev/keycheck&
+cat /dev/input/event1 > /dev/keycheck&
 sleep 3
 kill -9 $!
 if [ -s /dev/keycheck -o -e /cache/recovery/boot ]

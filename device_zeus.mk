@@ -23,8 +23,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-DISABLE_DEXPREOPT := false
-
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
@@ -75,6 +73,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.checkjni=false \
     ro.kernel.android.checkjni=0 \
     ro.opengles.version=131072  \
+    ro.tethering.kb_disconnect=1 \
     ro.compcache.default=0 \
     ro.product.locale.language=en \
     ro.product.locale.region=US \

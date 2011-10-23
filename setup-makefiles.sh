@@ -43,13 +43,12 @@ vendor/__VENDOR__/__DEVICE__/proprietary/atdaemon.kl:system/usr/keylayout/atdaem
 vendor/__VENDOR__/__DEVICE__/proprietary/AVRCP.kl:system/usr/keylayout/AVRCP.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/keypad-game-zeus.kl:system/usr/keylayout/keypad-game-zeus.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/keypad-phone-zeus.kl:system/usr/keylayout/keypad-phone-zeus.kl \\
-vendor/__VENDOR__/__DEVICE__/proprietary/keypad-pmic-zeus.kl:system/usr/keylayout/keypad-pmic-zeus.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/keypad-zeus.kl:system/usr/keylayout/keypad-zeus.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kl:system/usr/keylayout/qwerty.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/simple_remote.kl:system/usr/keylayout/simple_remote.kl \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \\
-vendor/__VENDOR__/__DEVICE__/proprietary/zeus-keypad.kcm.bin:system/usr/keychars/zeus-keypad.kcm.bin \\
+vendor/__VENDOR__/__DEVICE__/proprietary/keypad-zeus.kcm.bin:system/usr/keychars/keypad-zeus.kcm.bin \\
 vendor/__VENDOR__/__DEVICE__/proprietary/lidswitchd:system/bin/lidswitchd
 
 
@@ -88,14 +87,12 @@ vendor/__VENDOR__/__DEVICE__/proprietary/netmgrd:system/bin/netmgrd
 
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \\
 vendor/__VENDOR__/__DEVICE__/proprietary/liboemcamera.so:system/lib/liboemcamera.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:system/lib/libcamera.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_common.so:system/lib/libopencore_common.so \\
 vendor/__VENDOR__/__DEVICE__/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/libmmipl.so:system/lib/libmmipl.so \\
-vendor/__VENDOR__/__DEVICE__/proprietary/drmserver:system/bin/drmserver \\
-vendor/__VENDOR__/__DEVICE__/proprietary/drmioserver:system/bin/drmioserver
+vendor/__VENDOR__/__DEVICE__/proprietary/libmmipl.so:system/lib/libmmipl.so
 
 ## FIRMWARE
 PRODUCT_COPY_FILES += \\
@@ -138,17 +135,13 @@ PRODUCT_COPY_FILES += \\
 vendor/__VENDOR__/__DEVICE__/proprietary/gps.msm7x30.so:system/lib/hw/gps.semc.so
 
 PRODUCT_COPY_FILES += \\
-vendor/__VENDOR__/__DEVICE__/proprietary/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.playstation.playstationcertified.xml:system/etc/permissions/com.playstation.playstationcertified.xml \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.sony.android.playstationcertified.xml:system/etc/permissions/com.sony.android.playstationcertified.xml \\
 vendor/__VENDOR__/__DEVICE__/proprietary/com.sonyericsson.android.xperiaplaycertified.xml:system/etc/permissions/com.sonyericsson.android.xperiaplaycertified.xml \\
-vendor/__VENDOR__/__DEVICE__/proprietary/com.sony.android.playstationcertified.xml:system/etc/permissions/com.sony.android.playstationcertified.xml
-
-
-PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.playstation.playstationcertified.jar:system/framework/com.playstation.playstationcertified.jar \\
 vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framework/xperiaplaycertified.jar \\
 vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
-vendor/__VENDOR__/__DEVICE__/proprietary/com.sonyericsson.androidapp.storefront.apk:system/app/com.sonyericsson.androidapp.storefront.apk
-
-PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.sonyericsson.androidapp.storefront.apk:system/app/com.sonyericsson.androidapp.storefront.apk \\
 vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk
 
 ## Adreno 200 files

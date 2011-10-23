@@ -25,14 +25,12 @@ adb pull /system/usr/keylayout/atdaemon.kl ../../../vendor/$VENDOR/$DEVICE/propr
 adb pull /system/usr/keylayout/AVRCP.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/keypad-game-zeus.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/keypad-phone-zeus.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/usr/keylayout/keypad-pmic-zeus.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/keypad-zeus.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/qwerty.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keylayout/simple_remote.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keychars/qwerty.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/keychars/qwerty2.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/usr/keychars/zeus-keypad.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/usr/keychars/zeus-keypad.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/keychars/keypad-zeus.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/lidswitchd ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
@@ -68,13 +66,11 @@ adb pull /system/lib/libqdp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/netmgrd ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## Camera proprietaries
+adb pull /system/etc/permissions/android.hardware.camera.front.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/liboemcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmjpeg.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$VENDOR/$DEVICE/proprietary 
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libopencore_common.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/drmserver ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/drmioserver ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ## FIRMWARE
 adb pull /system/etc/firmware/bcm4329.hcd ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -109,18 +105,22 @@ adb pull /system/lib/libmiscta.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 #Temporary GPS Fix untill we have 50001 gps
 adb pull /system/lib/hw/gps.msm7x30.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
-#permissions
-adb pull /system/etc/permissions/android.hardware.camera.front.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
+## Adreno 200 files
+adb pull /system/lib/libgsl.so ../../../vendor/$VENDOR/$DEVICE/proprietary/libgsl.so
+adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+
+#PS Deps 
+adb pull /system/etc/permissions/com.playstation.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/permissions/com.sonyericsson.android.xperiaplaycertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/permissions/com.sony.android.playstationcertified.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-
-#libs & Apps
+adb pull /system/framework/com.playstation.playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/app/com.sonyericsson.androidapp.storefront.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-#ps dependencies
 adb pull /system/app/preinstalledservice.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
