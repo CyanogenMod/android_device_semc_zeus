@@ -142,7 +142,9 @@ vendor/__VENDOR__/__DEVICE__/proprietary/com.playstation.playstationcertified.ja
 vendor/__VENDOR__/__DEVICE__/proprietary/xperiaplaycertified.jar:system/framework/xperiaplaycertified.jar \\
 vendor/__VENDOR__/__DEVICE__/proprietary/playstationcertified.jar:system/framework/playstationcertified.jar \\
 vendor/__VENDOR__/__DEVICE__/proprietary/com.sonyericsson.androidapp.storefront.apk:system/app/com.sonyericsson.androidapp.storefront.apk \\
-vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk
+vendor/__VENDOR__/__DEVICE__/proprietary/preinstalledservice.apk:system/app/preinstalledservice.apk \\
+vendor/__VENDOR__/__DEVICE__/proprietary/librsasigner.so:system/lib/librsasigner.so
+
 
 ## Adreno 200 files
 PRODUCT_COPY_FILES += \\

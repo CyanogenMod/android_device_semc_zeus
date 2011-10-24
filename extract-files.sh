@@ -122,6 +122,7 @@ adb pull /system/framework/playstationcertified.jar ../../../vendor/$VENDOR/$DEV
 adb pull /system/framework/xperiaplaycertified.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/app/com.sonyericsson.androidapp.storefront.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/app/preinstalledservice.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/librsasigner.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 
 ./setup-makefiles.sh
