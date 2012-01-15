@@ -1,0 +1,94 @@
+# Prebuilt kl keymaps
+usr/keylayout/atdaemon.kl
+usr/keylayout/AVRCP.kl
+usr/keylayout/keypad-game-zeus.kl
+usr/keylayout/keypad-phone-zeus.kl
+usr/keylayout/keypad-zeus.kl
+usr/keylayout/qwerty.kl
+usr/keylayout/simple_remote.kl
+usr/keychars/qwerty.kcm.bin
+usr/keychars/keypad-zeus.kcm.bin
+bin/lidswitchd
+
+## RIL related stuff 
+bin/port-bridge
+bin/qmuxd
+lib/libril.so
+lib/libauth.so
+lib/libcm.so
+lib/libdiag.so
+lib/libdll.so
+lib/libdsm.so
+lib/libdss.so
+lib/libgsdi_exp.so
+lib/libgstk_exp.so
+lib/libmmgsdilib.so
+lib/libnv.so
+lib/liboem_rapi.so
+lib/liboncrpc.so
+lib/libpbmlib.so
+lib/libqmi.so
+lib/libqueue.so
+lib/libuim.so
+lib/libreference-ril.so
+lib/libril-qc-1.so
+lib/libwms.so
+lib/libwmsts.so
+lib/libdsi_netctrl.so
+lib/libdsutils.so
+lib/libidl.so
+lib/libnetmgr.so
+lib/libqdp.so
+bin/netmgrd
+
+## Camera proprietaries
+etc/permissions/android.hardware.camera.front.xml
+lib/liboemcamera.so
+lib/libmmjpeg.so
+lib/libmmipl.so 
+lib/libcamera.so
+
+## FIRMWARE
+etc/firmware/bcm4329.hcd
+etc/firmware/fw_bcm4329.bin
+etc/firmware/fw_bcm4329_apsta.bin
+etc/firmware/vidc_720p_command_control.fw
+etc/firmware/vidc_720p_h263_dec_mc.fw
+etc/firmware/vidc_720p_h264_dec_mc.fw
+etc/firmware/vidc_720p_h264_enc_mc.fw
+etc/firmware/vidc_720p_mp4_dec_mc.fw
+etc/firmware/vidc_720p_mp4_enc_mc.fw
+etc/firmware/vidc_720p_vc1_dec_mc.fw
+etc/firmware/yamato_pfp.fw
+etc/firmware/yamato_pm4.fw
+
+## WIFI & BT BCM
+etc/wifi/calibration
+etc/wifi/wpa_supplicant.conf
+
+## Other libraries and proprietary binaries
+lib/libaudioalsa.so
+etc/sensors.conf
+etc/vold.fstab
+lib/hw/sensors.default.so
+bin/akmd8975
+bin/chargemon
+lib/libmiscta.so
+
+## Adreno 200 files
+lib/libgsl.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libq3dtools_adreno200.so
+lib/egl/libEGL_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+
+#PS Deps 
+etc/permissions/com.playstation.playstationcertified.xml
+etc/permissions/com.sonyericsson.android.xperiaplaycertified.xml
+etc/permissions/com.sony.android.playstationcertified.xml
+framework/com.playstation.playstationcertified.jar
+framework/playstationcertified.jar
+framework/xperiaplaycertified.jar
+app/com.sonyericsson.androidapp.storefront.apk
+app/preinstalledservice.apk
+lib/librsasigner.so
