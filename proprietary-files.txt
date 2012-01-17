@@ -65,7 +65,7 @@ etc/firmware/yamato_pm4.fw
 
 ## WIFI & BT BCM
 etc/wifi/calibration
-#etc/wifi/wpa_supplicant.conf
+etc/wifi/wpa_supplicant.conf
 
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
