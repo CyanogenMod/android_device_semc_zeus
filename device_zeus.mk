@@ -7,21 +7,11 @@ $(call inherit-product-if-exists, vendor/semc/zeus/zeus-vendor.mk)
 
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := zeus
+PRODUCT_NAME := Xperia Play
 PRODUCT_DEVICE := zeus
-PRODUCT_MODEL := zeus
-
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/semc/zeus/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+PRODUCT_MODEL := R800i
 
 -include device/semc/zeus-common/zeus.mk
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
@@ -30,12 +20,12 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/zeus/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
-	device/semc/zeus/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
+    device/semc/zeus/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
+    device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
 
 #WIFI modules
@@ -53,8 +43,7 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_04_H.png:system/semc/chargemon/data/charging_animation_04.png \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_05_H.png:system/semc/chargemon/data/charging_animation_05.png \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_06_H.png:system/semc/chargemon/data/charging_animation_06.png \
-    device/semc/msm7x30-common/prebuilt/animations/charging_animation_07_H.png:system/semc/chargemon/data/charging_animation_07.png \
-    device/semc/msm7x30-common/prebuilt/animations/charging_animation_blank_H.png:system/semc/chargemon/data/charging_animation_blank.png
+    device/semc/msm7x30-common/prebuilt/animations/charging_animation_07_H.png:system/semc/chargemon/data/charging_animation_07.png
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-1.so \
