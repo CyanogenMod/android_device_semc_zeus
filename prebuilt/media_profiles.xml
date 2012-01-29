@@ -26,7 +26,7 @@
                          AudioDecoderCap)>
 <!ELEMENT CamcorderProfiles (EncoderProfile+, ImageEncoding+, ImageDecoding, Camera)>
 <!ELEMENT EncoderProfile (Video, Audio)>
-<!ATTLIST EncoderProfile quality (high|low) #REQUIRED>
+<!ATTLIST EncoderProfile quality (timelapse1080p|timelapse720p|timelapse480p|timelapsecif|timelapseqcif|720p|480p|cif|qcif) #REQUIRED>
 <!ATTLIST EncoderProfile fileFormat (mp4|3gp) #REQUIRED>
 <!ATTLIST EncoderProfile duration (30|60) #REQUIRED>
 <!ELEMENT Video EMPTY>
@@ -85,11 +85,11 @@
         <!--
         Profiles for the back camera
         -->
-        <EncoderProfile quality="high" fileFormat="mp4" duration="60">
+        <EncoderProfile quality="720p" fileFormat="mp4" duration="60">
             <Video codec="h264"
-                   bitRate="4000000"
-                   width="800"
-                   height="480"
+                   bitRate="6000000"
+                   width="1280"
+                   height="720"
                    frameRate="30" />
 
            <Audio codec="aac"
@@ -98,7 +98,7 @@
                    channels="2" />
         </EncoderProfile>
 
-        <EncoderProfile quality="low" fileFormat="3gp" duration="20">
+        <EncoderProfile quality="qcif" fileFormat="3gp" duration="20">
             <Video codec="h263"
                    bitRate="96000"
                    width="176"
@@ -125,7 +125,7 @@
         <!--
         Profiles for the front camera
         -->
-        <EncoderProfile quality="high" fileFormat="mp4" duration="60">
+        <EncoderProfile quality="480p" fileFormat="mp4" duration="60">
             <Video codec="h264"
                    bitRate="4000000"
                    width="640"
@@ -138,7 +138,7 @@
                    channels="2" />
         </EncoderProfile>
 
-        <EncoderProfile quality="low" fileFormat="3gp" duration="20">
+        <EncoderProfile quality="qcif" fileFormat="3gp" duration="20">
             <Video codec="h263"
                    bitRate="96000"
                    width="176"

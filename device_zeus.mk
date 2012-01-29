@@ -11,17 +11,7 @@ PRODUCT_NAME := zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MODEL := zeus
 
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/semc/zeus/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 -include device/semc/zeus-common/zeus.mk
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
