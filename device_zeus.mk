@@ -11,6 +11,10 @@ PRODUCT_NAME := zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MODEL := zeus
 
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
+
 -include device/semc/zeus-common/zeus.mk
 
 # These is the hardware-specific overlay, which points to the location
@@ -31,8 +35,8 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
 
 #WIFI modules
-PRODUCT_COPY_FILES += \
-    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
+#PRODUCT_COPY_FILES += \
+#    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
 
 # semc msm7x30 uses high-density artwork where available
 PRODUCT_LOCALES += hdpi

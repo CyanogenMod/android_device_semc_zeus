@@ -1,15 +1,23 @@
 # Prebuilt kl keymaps
 usr/idc/cy8ctma300_touch.idc
 usr/idc/synaptics_touchpad.idc
-usr/keylayout/atdaemon.kl
 usr/keylayout/AVRCP.kl
+usr/keylayout/Generic.kl
+usr/keylayout/Vendor_045e_Product_028e.kl
+usr/keylayout/Vendor_046d_Product_c216.kl
+usr/keylayout/Vendor_046d_Product_c294.kl
+usr/keylayout/Vendor_046d_Product_c299.kl
+usr/keylayout/Vendor_046d_Product_c532.kl
+usr/keylayout/Vendor_054c_Product_0268.kl
+usr/keylayout/Vendor_05ac_Product_0239.kl
+usr/keylayout/Vendor_22b8_Product_093d.kl
+usr/keylayout/atdaemon.kl
 usr/keylayout/keypad-game-zeus.kl
 usr/keylayout/keypad-phone-zeus.kl
 usr/keylayout/keypad-zeus.kl
 usr/keylayout/qwerty.kl
 usr/keylayout/simple_remote.kl
-usr/keychars/qwerty.kcm.bin
-usr/keychars/keypad-zeus.kcm.bin
+usr/keychars/keypad-zeus.kcm
 bin/lidswitchd
 
 ## RIL related stuff
@@ -44,7 +52,7 @@ bin/netmgrd
 
 ## Camera proprietaries
 etc/permissions/android.hardware.camera.front.xml
-#lib/hw/camera.semc.so
+lib/hw/camera.semc.so
 lib/liboemcamera.so
 lib/libmmjpeg.so
 lib/libmmipl.so
