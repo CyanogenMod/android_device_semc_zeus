@@ -28,6 +28,7 @@ DEVICE_PACKAGE_OVERLAYS += device/semc/zeus/overlay
 
 # Init files
 PRODUCT_COPY_FILES += \
+    device/semc/zeus/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/zeus/recovery.fstab:root/recovery.fstab \
@@ -35,8 +36,8 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
 
 #WIFI modules
-#PRODUCT_COPY_FILES += \
-#    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
+PRODUCT_COPY_FILES += \
+    device/semc/zeus/modules/bcm4329.ko:root/modules/bcm4329.ko
 
 # semc msm7x30 uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
