@@ -10,7 +10,7 @@ usr/keychars/qwerty.kcm.bin
 usr/keychars/keypad-zeus.kcm.bin
 bin/lidswitchd
 
-## RIL related stuff
+## RIL related stuff 
 bin/port-bridge
 bin/qmuxd
 lib/libril.so
@@ -30,6 +30,7 @@ lib/libpbmlib.so
 lib/libqmi.so
 lib/libqueue.so
 lib/libuim.so
+lib/libreference-ril.so
 lib/libril-qc-1.so
 lib/libwms.so
 lib/libwmsts.so
@@ -69,7 +70,6 @@ etc/wifi/wpa_supplicant.conf
 lib/libaudioalsa.so
 etc/sensors.conf
 etc/vold.fstab
-lib/hw/sensors.default.so
 bin/akmd8975
 bin/chargemon
 lib/libmiscta.so
