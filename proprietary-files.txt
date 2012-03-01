@@ -79,7 +79,6 @@ etc/wifi/wpa_supplicant.conf
 lib/libaudioalsa.so
 etc/sensors.conf
 etc/vold.fstab
-lib/hw/sensors.default.so
 bin/akmd8975
 bin/chargemon
 lib/libmiscta.so
