@@ -46,5 +46,7 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/animations/charging_animation_07_H.png:system/semc/chargemon/data/charging_animation_07.png
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=0 \
+    ro.telephony.ril_class=semc \
     wifi.interface=eth0 \
     ro.sf.lcd_density=240
