@@ -1,8 +1,6 @@
 -include device/semc/zeus-common/BoardConfigCommon.mk
 -include vendor/semc/zeus/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/semc/zeus/include
-
 SENSORS_COMPASS_AK897X := true
 SENSORS_ACCEL_BMA150_INPUT := true
 SENSORS_ACCEL_BMA250_INPUT := false
