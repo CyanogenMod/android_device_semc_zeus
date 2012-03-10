@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
     device/semc/zeus/recovery.fstab:root/recovery.fstab \
-    device/semc/zeus/prebuilt/filler:root/filler \
     device/semc/zeus/prebuilt/bootrec:root/sbin/bootrec
 
 #WIFI modules
