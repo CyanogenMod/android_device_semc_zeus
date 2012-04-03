@@ -17,6 +17,7 @@ usr/keylayout/keypad-phone-zeus.kl
 usr/keylayout/keypad-zeus.kl
 usr/keylayout/qwerty.kl
 usr/keylayout/simple_remote.kl
+usr/keychars/keypad-game-zeus.kcm
 usr/keychars/keypad-zeus.kcm
 bin/lidswitchd
 
