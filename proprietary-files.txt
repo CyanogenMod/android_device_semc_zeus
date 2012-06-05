@@ -60,8 +60,6 @@ lib/libmmipl.so
 
 ## FIRMWARE
 etc/firmware/bcm4329.hcd
-etc/firmware/fw_bcm4329.bin
-etc/firmware/fw_bcm4329_apsta.bin
 etc/firmware/vidc_720p_command_control.fw
 etc/firmware/vidc_720p_h263_dec_mc.fw
 etc/firmware/vidc_720p_h264_dec_mc.fw
@@ -74,7 +72,6 @@ etc/firmware/yamato_pm4.fw
 
 ## WIFI & BT BCM
 etc/wifi/calibration
-etc/wifi/wpa_supplicant.conf
 
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
