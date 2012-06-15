@@ -1,6 +1,10 @@
 -include device/semc/zeus-common/BoardConfigCommon.mk
 -include vendor/semc/zeus/BoardConfigVendor.mk
 
+TARGET_KERNEL_SOURCE := kernel/semc/msm7x30
+TARGET_KERNEL_CONFIG := cyanogen_zeus_defconfig
+TARGET_PREBUILT_KERNEL := device/semc/zeus/prebuilt/kernel
+
 SENSORS_COMPASS_AK897X := true
 SENSORS_ACCEL_BMA150_INPUT := true
 SENSORS_ACCEL_BMA250_INPUT := false
