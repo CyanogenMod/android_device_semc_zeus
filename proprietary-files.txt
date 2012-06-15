@@ -80,6 +80,7 @@ etc/vold.fstab
 bin/akmd8975
 bin/chargemon
 lib/libmiscta.so
+lib/libv8.so
 
 ## Adreno 200 files
 lib/libC2D2.so
