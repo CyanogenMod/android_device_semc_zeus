@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/bootrec-device:root/sbin/bootrec-device
 
 #WIFI modules
-PRODUCT_COPY_FILES += \
-    device/semc/zeus/prebuilt/bcm4329.ko:root/modules/bcm4329.ko
+#PRODUCT_COPY_FILES += \
+#    device/semc/zeus/prebuilt/bcm4329.ko:root/modules/bcm4329.ko
 
 # semc msm7x30 uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
