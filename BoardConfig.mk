@@ -1,3 +1,4 @@
+-include device/semc/msm7x30-common/BoardConfigCommon.mk
 -include device/semc/zeus-common/BoardConfigCommon.mk
 -include vendor/semc/zeus/BoardConfigVendor.mk
 
