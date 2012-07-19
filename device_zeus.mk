@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/init.semc.usb.rc:root/init.semc.usb.rc \
     device/semc/msm7x30-common/prebuilt/logo_H.rle:root/logo.rle \
     device/semc/zeus/prebuilt/hw_config.sh:system/etc/hw_config.sh \
-    device/semc/zeus/recovery.fstab:root/etc/recovery.fstab \
+    device/semc/zeus/recovery.fstab:root/recovery.fstab \
     device/semc/zeus/prebuilt/bootrec-device:root/sbin/bootrec-device
 
 $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-hdpi.mk)
