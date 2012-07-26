@@ -75,7 +75,6 @@ etc/wifi/calibration
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
 etc/sensors.conf
-etc/vold.fstab
 bin/akmd8975
 bin/chargemon
 lib/libmiscta.so
