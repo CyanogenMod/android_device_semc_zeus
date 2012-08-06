@@ -3,7 +3,7 @@ $(call inherit-product-if-exists, vendor/semc/zeus/zeus-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/semc/zeus/overlay
 
-$(call inherit-product, device/semc/mogami-common/mogami.mk)
+$(call inherit-product, device/semc/zeus-common/zeus.mk)
 
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
