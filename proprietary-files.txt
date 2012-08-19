@@ -1,15 +1,3 @@
-# Prebuilt kl keymaps
-usr/idc/cy8ctma300_touch.idc
-usr/idc/synaptics_touchpad.idc
-usr/keylayout/atdaemon.kl
-usr/keylayout/keypad-game-zeus.kl
-usr/keylayout/keypad-phone-zeus.kl
-usr/keylayout/keypad-zeus.kl
-usr/keylayout/simple_remote.kl
-usr/keychars/keypad-game-zeus.kcm
-usr/keychars/keypad-zeus.kcm
-bin/lidswitchd
-
 ## RIL related stuff
 bin/port-bridge
 bin/qmuxd
@@ -63,10 +51,10 @@ etc/wifi/calibration
 
 ## Other libraries and proprietary binaries
 lib/libaudioalsa.so
-etc/sensors.conf
 bin/akmd8975
 bin/chargemon
 lib/libmiscta.so
+bin/lidswitchd
 
 ## Adreno 200 files
 lib/libC2D2.so

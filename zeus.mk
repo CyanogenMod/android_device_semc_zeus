@@ -22,6 +22,19 @@ PRODUCT_COPY_FILES += \
     device/semc/zeus/prebuilt/bootrec-device:root/sbin/bootrec-device \
     device/semc/zeus/recovery.fstab:root/recovery.fstab
 
+# Device specific configs
+PRODUCT_COPY_FILES += \
+    device/semc/zeus/config/cy8ctma300_touch.idc:system/usr/idc/cy8ctma300_touch.idc \
+    device/semc/zeus/config/synaptics_touchpad.idc:system/usr/idc/synaptics_touchpad.idc \
+    device/semc/zeus/config/atdaemon.kl:system/usr/keylayout/atdaemon.kl \
+    device/semc/zeus/config/keypad-game-zeus.kl:system/usr/keylayout/keypad-game-zeus.kl \
+    device/semc/zeus/config/keypad-phone-zeus.kl:system/usr/keylayout/keypad-phone-zeus.kl \
+    device/semc/zeus/config/keypad-zeus.kl:system/usr/keylayout/keypad-zeus.kl \
+    device/semc/zeus/config/simple_remote.kl:system/usr/keylayout/simple_remote.kl \
+    device/semc/zeus/config/keypad-game-zeus.kcm:system/usr/keychars/keypad-game-zeus.kcm \
+    device/semc/zeus/config/keypad-zeus.kcm:system/usr/keychars/keypad-zeus.kcm \
+    device/semc/zeus/config/sensors.conf:system/etc/sensors.conf
+
 $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-hdpi.mk)
 
 #LCD DENSITY
