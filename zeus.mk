@@ -40,4 +40,5 @@ $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-hdpi.mk)
 #LCD DENSITY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
+    ro.telephony.ril_class=SemcRIL \
     com.qc.hdmi_out=false
