@@ -7,6 +7,10 @@ $(call inherit-product, device/semc/zeus-common/zeus.mk)
 
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
+# These are the hardware-specific features
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
 PRODUCT_AAPT_CONFIG := normal hdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
@@ -35,7 +39,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, device/semc/msm7x30-common/prebuilt/resources-hdpi.mk)
 
-#LCD DENSITY
+# Device properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     ro.telephony.ril_class=SemcRIL \

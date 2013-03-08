@@ -1,12 +1,15 @@
 -include device/semc/zeus-common/BoardConfigCommon.mk
 -include vendor/semc/zeus/BoardConfigVendor.mk
 
+# Kernel
 TARGET_KERNEL_SOURCE := kernel/semc/msm7x30
 TARGET_KERNEL_CONFIG := cyanogen_zeus_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
+# Recovery
 TARGET_RECOVERY_INITRC := device/semc/zeus/recovery/init.rc
 
+# Sensors
 SENSORS_COMPASS_AK8975 := true
 SENSORS_ACCEL_BMA150_INPUT := true
 SENSORS_ACCEL_BMA250_INPUT := false
